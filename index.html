@@ -1,0 +1,717 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="id"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+<title>Endah Puji Lestari | Creative Portfolio DKV</title>
+<!-- Google Fonts for Playful Retro Typography -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&amp;family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;family=Shrikhand&amp;display=swap" rel="stylesheet">
+<!-- Tailwind CSS v3 with plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cream: '#fcf8ee',
+            'cream-card': '#fffdf8',
+            'retro-pink': '#ff6384',
+            'retro-hotpink': '#ff3b6f',
+            'retro-orange': '#ff782d',
+            'retro-yellow': '#ffd026',
+            'retro-green': '#05b064',
+            'retro-blue': '#2251f5',
+            'retro-cyan': '#06b6d4',
+            'brick-wall': '#bd384e',
+          },
+          fontFamily: {
+            display: ['"Fredoka"', 'sans-serif'],
+            shrikhand: ['"Shrikhand"', 'cursive'],
+            body: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          boxShadow: {
+            'comic': '3px 3px 0px #1e293b',
+            'comic-lg': '5px 5px 0px #1e293b',
+            'comic-xl': '7px 7px 0px #1e293b',
+            'comic-sm': '2px 2px 0px #1e293b',
+          }
+        }
+      }
+    }
+  </script>
+<!-- Custom Styles for Decorative Doodles and Text Effects -->
+<style data-purpose="typography">
+    .text-outline-dark {
+      -webkit-text-stroke: 1.5px #1e293b;
+    }
+    .wavy-line {
+      background: radial-gradient(circle at 10px -5px, transparent 12px, #ff6384 13px, #ff6384 15px, transparent 16px) 0 0,
+                  radial-gradient(circle at 10px 15px, transparent 12px, #ff6384 13px, #ff6384 15px, transparent 16px) 10px -10px;
+      background-size: 20px 20px;
+      background-repeat: repeat-x;
+      height: 12px;
+    }
+    @keyframes letter-blink {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.2; transform: scale(1.1); }
+    }
+    .letter-blink {
+      animation: letter-blink 1.2s infinite ease-in-out;
+    }
+  </style>
+<style data-purpose="stickers-and-badges">
+    .paper-clip {
+      position: absolute;
+      width: 28px;
+      height: 56px;
+      border: 4px solid #b197fc;
+      border-radius: 14px 14px 10px 10px;
+      transform: rotate(-18deg);
+      z-index: 20;
+    }
+    .tape-strip {
+      background-color: rgba(254, 240, 138, 0.75);
+      backdrop-filter: blur(1px);
+      box-shadow: 0 1px 2px rgba(0,0,0,0.08);
+    }
+    .badge-pop {
+      transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+    .badge-pop:active {
+      transform: translate(2px, 2px);
+      box-shadow: 1px 1px 0px #1e293b;
+    }
+  </style>
+</head>
+<body class="bg-cream font-body text-slate-800 antialiased overflow-x-hidden selection:bg-retro-yellow selection:text-black">
+<!-- Outer Mobile Container: iPhone Pro/Pro Max dimension styled viewport -->
+<div class="max-w-[430px] mx-auto min-h-screen bg-cream border-x-4 border-slate-900 relative shadow-2xl overflow-hidden pb-16">
+<!-- BEGIN: TopIntroBanner -->
+<header class="relative bg-brick-wall border-b-4 border-slate-900 pt-3 pb-0 px-4 text-center overflow-hidden">
+<!-- Brick mortar pattern background simulation -->
+<div class="absolute inset-0 opacity-20 pointer-events-none" style="background-image: linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px); background-size: 24px 12px;"></div>
+<!-- Top Sub-Banner Ribbon -->
+<div class="inline-block bg-cream border-2 border-slate-900 rounded-full px-4 py-0.5 text-xs font-bold uppercase tracking-widest text-slate-900 shadow-comic-sm mb-2 relative z-10">
+        ✨ WELCOME TO MY ✨
+      </div>
+<!-- Peeking Character & Badges Row -->
+<div class="relative flex items-end justify-center pt-2 z-10">
+<!-- Left Badge: Name bubble -->
+<div class="hidden xs:block absolute left-2 top-4 bg-white/90 border-2 border-dashed border-white rounded-full px-2.5 py-0.5 text-[10px] font-bold text-slate-900 rotate-[-10deg] shadow-sm">
+          ENDAH PUJI
+        </div>
+<!-- Center: Endah Photo Avatar -->
+<div class="relative w-20 h-20 mx-auto mb-1 bg-white border-3 border-slate-900 rounded-full overflow-hidden shadow-comic cursor-pointer group" onclick="openImageModal('foto enda.jpeg', 'Endah Puji Lestari', 'Welcome • DKV 3')" title="Klik untuk perbesar foto">
+<img src="foto enda.jpeg" alt="Endah Puji Lestari" class="w-full h-full object-cover group-hover:scale-110 transition duration-300">
+</div>
+
+<!-- Right Badge: Role bubble -->
+<div class="hidden xs:block absolute right-2 top-4 bg-white/90 border-2 border-dashed border-white rounded-full px-2.5 py-0.5 text-[10px] font-bold text-slate-900 rotate-[8deg] shadow-sm">
+          DKV 3 DESIGNER
+        </div>
+</div>
+</header>
+<!-- END: TopIntroBanner -->
+<!-- BEGIN: HeroPortfolioSection -->
+<section class="relative px-5 pt-8 pb-7 bg-cream text-center overflow-hidden border-b-4 border-slate-900" data-purpose="hero-title-area">
+<!-- Decorative background stars and doodles -->
+<div class="absolute top-2 left-3 text-retro-orange opacity-90 text-2xl font-black">✦</div>
+<div class="absolute top-8 right-6 text-retro-blue opacity-90 text-3xl font-black">★</div>
+<div class="absolute bottom-16 left-6 text-retro-green text-3xl">✸</div>
+<div class="absolute bottom-20 right-4 text-retro-hotpink text-2xl">✦</div>
+<!-- Playful Decorative Scribble SVG Top Left -->
+<svg class="absolute top-3 left-8 w-12 h-8 text-retro-orange -rotate-12" fill="none" viewBox="0 0 50 30">
+<path d="M5 25C15 5 35 30 45 10" stroke="currentColor" stroke-linecap="round" stroke-width="4"></path>
+</svg>
+<!-- Subtitle Tag -->
+<div class="inline-flex items-center gap-1.5 bg-retro-yellow border-2 border-slate-900 px-3 py-1 rounded-full shadow-comic-sm mb-3">
+<span class="text-xs font-black uppercase tracking-wider text-slate-900">✨ Graphic Designer • DKV 3 ✨</span>
+</div>
+<h2 class="text-xs font-black text-slate-500 uppercase tracking-widest mb-1">ENDAH PUJI LESTARI</h2>
+<!-- BIG QUIRKY PLAYFUL "PORTFOLIO" TITLE -->
+<div class="relative py-2 select-none">
+<!-- Row 1: P O R T -->
+<div class="flex items-center justify-center gap-1 font-shrikhand text-5xl tracking-tight leading-none">
+<span class="text-retro-orange hover:scale-110 transform transition inline-block drop-shadow-[3px_3px_0px_#1e293b] letter-blink" style="animation-delay: 0s;">P</span>
+<span class="text-retro-yellow hover:scale-110 transform transition inline-block drop-shadow-[3px_3px_0px_#1e293b] letter-blink" style="animation-delay: 0.15s;">O</span>
+<span class="text-retro-blue hover:scale-110 transform transition inline-block drop-shadow-[3px_3px_0px_#1e293b] letter-blink" style="animation-delay: 0.3s;">R</span>
+<span class="text-retro-hotpink hover:scale-110 transform transition inline-block drop-shadow-[3px_3px_0px_#1e293b] letter-blink" style="animation-delay: 0.45s;">T</span>
+<!-- Star with Pixel Clicker Cursor -->
+<div class="relative inline-block ml-1">
+<svg class="w-11 h-11 text-retro-blue drop-shadow-[2px_2px_0px_#1e293b]" fill="currentColor" viewBox="0 0 24 24">
+<path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"></path>
+</svg>
+<!-- Cursor Icon pointing to star -->
+<svg class="w-6 h-6 absolute -bottom-2 -right-2 text-white drop-shadow-[2px_2px_0px_#000]" fill="currentColor" viewBox="0 0 24 24">
+<path d="M4 0L17.5 13.5H9.5L14 24L10 26L5.5 15.5L0 21V0L4 0Z" stroke="#000" stroke-width="1.5"></path>
+</svg>
+</div>
+</div>
+<!-- Row 2: F O L I O -->
+<div class="flex items-center justify-center gap-1 font-shrikhand text-5xl tracking-tight leading-none mt-2">
+<span class="text-retro-hotpink hover:scale-110 transform transition inline-block drop-shadow-[3px_3px_0px_#1e293b] letter-blink" style="animation-delay: 0.6s;">F</span>
+<span class="text-retro-cyan hover:scale-110 transform transition inline-block drop-shadow-[3px_3px_0px_#1e293b] letter-blink" style="animation-delay: 0.75s;">O</span>
+<span class="text-retro-green hover:scale-110 transform transition inline-block drop-shadow-[3px_3px_0px_#1e293b] letter-blink" style="animation-delay: 0.9s;">L</span>
+<span class="text-retro-blue hover:scale-110 transform transition inline-block drop-shadow-[3px_3px_0px_#1e293b] letter-blink" style="animation-delay: 1.05s;">I</span>
+<span class="text-retro-orange hover:scale-110 transform transition inline-block drop-shadow-[3px_3px_0px_#1e293b] letter-blink" style="animation-delay: 1.2s;">O</span>
+</div>
+</div>
+<!-- Quick Social / Identification Pills Bar -->
+<div class="mt-5 pt-3 border-t-2 border-dashed border-slate-300 flex flex-wrap items-center justify-center gap-2 text-[11px] font-bold text-slate-700">
+<span class="bg-white px-2.5 py-1 rounded-full border border-slate-800 shadow-comic-sm">📍 DKV 3 Student</span>
+<span class="bg-white px-2.5 py-1 rounded-full border border-slate-800 shadow-comic-sm">🎨 Visual Creator</span>
+
+</div>
+</section>
+<!-- END: HeroPortfolioSection -->
+<!-- BEGIN: TableOfContentsSection -->
+<section class="p-5 bg-cream relative border-b-4 border-slate-900" data-purpose="table-of-contents">
+<!-- Section Title with Vintage Badge & Doodle Frame -->
+<div class="text-center mb-6 relative">
+<div class="inline-block relative">
+<!-- Hand-drawn Oval Badge for "TABLE OF" -->
+<div class="bg-retro-yellow text-slate-900 border-2 border-slate-900 rounded-full px-3 py-0.5 text-xs font-black uppercase tracking-wider -rotate-6 shadow-comic-sm inline-block mb-1">
+            TABLE OF
+          </div>
+<h2 class="font-shrikhand text-4xl text-slate-900 tracking-normal flex items-center justify-center gap-1">
+<span class="text-retro-orange">C</span>
+<span class="text-retro-blue">O</span>
+<span class="text-retro-hotpink">N</span>
+<span class="text-retro-yellow">T</span>
+<span class="text-retro-green">E</span>
+<span class="text-retro-cyan">N</span>
+<span class="text-retro-orange">T</span>
+<span class="text-retro-hotpink">S</span>
+</h2>
+<!-- Wavy decorative underline -->
+<div class="wavy-line w-36 mx-auto mt-1"></div>
+</div>
+<!-- Decorative Star Doodles -->
+<span class="absolute right-6 top-0 text-retro-hotpink text-2xl font-bold animate-pulse">★</span>
+<span class="absolute left-6 top-3 text-retro-orange text-xl font-bold">✸</span>
+</div>
+<!-- Layout: Floating Pill Buttons & Pastel Pink Envelope graphic -->
+<div class="grid grid-cols-12 gap-3 items-center">
+<!-- Left Column: Navigation Pills -->
+<div class="col-span-7 flex flex-col gap-2.5 z-10">
+<a class="badge-pop bg-retro-hotpink text-white text-xs font-extrabold px-3 py-2 rounded-full border-2 border-slate-900 shadow-comic flex items-center gap-1.5 -rotate-1" href="#about-me">
+<span class="bg-white/20 rounded-full px-1.5 py-0.2 text-[10px]">01</span>
+<span class="">ABOUT ME</span>
+</a>
+<a class="badge-pop bg-retro-green text-white text-xs font-extrabold px-3 py-2 rounded-full border-2 border-slate-900 shadow-comic flex items-center gap-1.5 rotate-1" href="#skills-software">
+<span class="bg-white/20 rounded-full px-1.5 py-0.2 text-[10px]">02</span>
+<span class="">SKILLS &amp; TOOL</span>
+</a>
+<a class="badge-pop bg-retro-orange text-white text-xs font-extrabold px-3 py-2 rounded-full border-2 border-slate-900 shadow-comic flex items-center gap-1.5 -rotate-2" href="#experience">
+<span class="bg-white/20 rounded-full px-1.5 py-0.2 text-[10px]">03</span>
+<span class="">EXPERIENCE (PKL)</span>
+</a>
+
+<a class="badge-pop bg-retro-yellow text-slate-900 text-xs font-extrabold px-3 py-2 rounded-full border-2 border-slate-900 shadow-comic flex items-center gap-1.5 -rotate-1" href="#contact">
+<span class="bg-black/10 rounded-full px-1.5 py-0.2 text-[10px]">04</span>
+<span class="">CONTACT ME</span>
+</a>
+</div>
+<!-- Right Column: Illustrated Pink Envelope with Slipping cards motif -->
+<div class="col-span-5 relative">
+<!-- Pink Envelope Illustration -->
+<div class="relative w-full h-44 bg-[#ff94aa] rounded-2xl border-2 border-slate-900 shadow-comic-lg flex items-end justify-center p-2 overflow-hidden">
+<!-- Cards slipping out -->
+<div class="absolute -top-3 w-24 h-28 bg-white border-2 border-slate-900 rounded-lg -rotate-12 shadow-sm p-1.5 flex flex-col justify-between">
+<span class="text-[9px] font-black text-slate-800 uppercase leading-none">DKV 3</span>
+<div class="w-full h-10 bg-retro-yellow/40 rounded border border-dashed border-slate-400 flex items-center justify-center">
+<span class="text-xs">🎨</span>
+</div>
+<span class="text-[8px] font-bold text-retro-hotpink text-right">ENDAH</span>
+</div>
+<div class="absolute -top-1 right-2 w-22 h-26 bg-[#e0f2fe] border-2 border-slate-900 rounded-lg rotate-12 shadow-sm p-1 flex flex-col items-center justify-center">
+<span class="text-[8px] font-black text-retro-blue">PORTFOLIO</span>
+<span class="text-xs font-bold">✨</span>
+</div>
+<!-- Envelope V Flap front cover overlay -->
+<div class="w-full bg-[#ff7a98] border-t-2 border-slate-900 rounded-b-xl py-3 text-center z-10">
+<span class="text-[10px] font-black text-white uppercase tracking-widest">CREATIVE PACK</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: TableOfContentsSection -->
+<!-- BEGIN: AboutMeSection -->
+<section class="p-5 bg-cream relative border-b-4 border-slate-900" data-purpose="about-me-scrapbook" id="about-me">
+<!-- Section Header -->
+<div class="flex items-center justify-between mb-5">
+<div class="relative">
+<h3 class="font-shrikhand text-3xl text-retro-hotpink flex items-center gap-1">
+            ABOUT <span class="text-retro-blue">Meeeee!</span>
+</h3>
+<div class="wavy-line w-28"></div>
+</div>
+<div class="bg-retro-yellow border-2 border-slate-900 rounded-full px-3 py-1 text-xs font-black shadow-comic-sm -rotate-6">
+          XII DKV 3 🎓
+        </div>
+</div>
+<!-- Scrapbook Grid: Polaroid on left/top + Bio text -->
+<div class="space-y-5">
+<!-- Polaroid Card -->
+<div class="relative bg-white border-2 border-slate-900 rounded-xl p-3 shadow-comic-lg max-w-[290px] mx-auto rotate-[-2deg] transition transform hover:rotate-0">
+<!-- Tape Strips on Polaroid Corners -->
+<div class="tape-strip absolute -top-3 left-6 w-16 h-5 rotate-[-5deg] border border-amber-300"></div>
+<!-- Paperclip Detail -->
+<div class="paper-clip -top-4 right-5"></div>
+<!-- Polaroid Photo Window with Brick / Pastel Backdrop -->
+<div class="bg-brick-wall rounded-lg border-2 border-slate-900 p-2 text-center relative overflow-hidden">
+<!-- Mortar lines -->
+<div class="absolute inset-0 opacity-20 pointer-events-none" style="background-image: linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px); background-size: 16px 8px;"></div>
+<!-- Actual Photo Avatar -->
+<div onclick="openImageModal('foto lestari.jpeg', 'Endah Puji Lestari', 'DKV 3 • Creative Designer')" class="relative z-10 w-28 h-28 mx-auto bg-amber-100 rounded-full border-2 border-slate-900 overflow-hidden flex items-center justify-center cursor-pointer group" title="Klik untuk perbesar foto">
+<img src="foto lestari.jpeg" alt="Endah Puji Lestari" class="w-full h-full object-cover group-hover:scale-110 transition duration-300">
+</div>
+<!-- Floating Stars -->
+<span class="absolute top-2 left-2 text-retro-yellow text-sm">✨</span>
+<span class="absolute bottom-2 right-2 text-retro-yellow text-sm">✦</span>
+</div>
+<!-- Polaroid Label Area -->
+<div class="pt-3 pb-1 text-center">
+<div class="font-shrikhand text-2xl text-retro-blue tracking-wide uppercase leading-tight">
+              LESTARI
+            </div>
+<div class="text-[11px] font-black tracking-widest text-retro-orange uppercase">
+              GRAPHIC DESIGNER • DKV
+            </div>
+</div>
+<!-- Pinned Tag badges -->
+<div class="flex flex-wrap justify-center gap-1.5 mt-2 pt-2 border-t border-dashed border-slate-300">
+<span class="bg-retro-yellow/60 text-slate-900 border border-slate-900 text-[10px] font-bold px-2 py-0.5 rounded-md">📍 Indonesia</span>
+<span class="bg-retro-pink/30 text-slate-900 border border-slate-900 text-[10px] font-bold px-2 py-0.5 rounded-md">✨ Creative Soul</span>
+</div>
+</div>
+<!-- Bio Content Box with Color Pill Highlighters -->
+<div class="bg-white border-2 border-slate-900 rounded-2xl p-4 shadow-comic text-left relative">
+<!-- Tape Accent Top Right -->
+<div class="tape-strip absolute -top-2.5 right-6 w-14 h-5 rotate-[4deg] border border-amber-300"></div>
+<p class="text-sm leading-relaxed text-slate-800 font-medium">
+            Halo, perkenalkan saya 
+            <span onclick="openPhotoModal()" class="bg-retro-yellow font-extrabold px-1.5 py-0.5 rounded border border-slate-900 inline-block shadow-comic-sm cursor-pointer hover:bg-retro-orange hover:text-white transition transform hover:scale-105" title="Klik untuk lihat foto asli!">
+              Endah Puji Lestari
+            </span>, 
+            siswa kelas <strong class="text-retro-hotpink font-bold">XII DKV 3</strong>. Saya merupakan pelajar jurusan 
+            <span class="bg-emerald-100 font-bold px-1.5 py-0.5 rounded border border-emerald-400 text-emerald-900">
+              Desain Komunikasi Visual (DKV)
+            </span> 
+            yang memiliki minat dalam bidang 
+            <span class="bg-rose-100 text-retro-hotpink font-bold px-1.5 py-0.5 rounded border border-rose-300">
+              desain grafis
+            </span>, 
+            <span class="bg-amber-100 text-amber-900 font-bold px-1.5 py-0.5 rounded border border-amber-300">
+              branding
+            </span>, 
+            dan <span class="bg-blue-100 text-blue-900 font-bold px-1.5 py-0.5 rounded border border-blue-300">pembuatan konten visual</span>.
+          </p>
+<p class="text-sm leading-relaxed text-slate-800 font-medium mt-3">
+            Saya senang mengembangkan ide kreatif menjadi sebuah desain yang 
+            <span class="bg-retro-green text-white font-bold px-1.5 py-0.5 rounded">menarik</span>, 
+            <span class="bg-retro-blue text-white font-bold px-1.5 py-0.5 rounded">komunikatif</span>, 
+            dan <span class="bg-retro-orange text-white font-bold px-1.5 py-0.5 rounded">sesuai dengan kebutuhan</span>.
+          </p>
+</div>
+</div>
+</section>
+<!-- END: AboutMeSection -->
+<!-- BEGIN: ExperienceSection -->
+<section class="p-5 bg-cream relative border-b-4 border-slate-900" data-purpose="experience-highlight" id="experience">
+<div class="flex items-center gap-2 mb-4">
+<!-- Hand-drawn Oval Badge for Experience Title -->
+<div class="border-2 border-slate-900 bg-retro-yellow rounded-full px-4 py-1 shadow-comic-sm inline-block -rotate-2">
+<h3 class="font-shrikhand text-2xl text-slate-900">
+            Work Experience
+          </h3>
+</div>
+<span class="text-retro-orange text-2xl font-black">✦</span>
+</div>
+<!-- Experience Card -->
+<div class="bg-cream-card border-2 border-slate-900 rounded-2xl p-4 shadow-comic-lg relative overflow-hidden">
+<!-- Corner Tag -->
+<div class="absolute -top-1 -right-1 bg-retro-green text-white border-2 border-slate-900 text-[10px] font-black px-3 py-1 rounded-bl-xl shadow-comic-sm">
+          COMPLETED PKL
+        </div>
+<div class="flex items-start gap-3">
+<!-- Building/Company Icon Stamp -->
+<div class="w-12 h-12 rounded-xl bg-retro-hotpink/10 border-2 border-slate-900 flex items-center justify-center shrink-0 shadow-comic-sm">
+<span class="text-2xl">🏢</span>
+</div>
+<div>
+<div class="inline-block bg-retro-blue text-white text-[10px] font-extrabold px-2 py-0.5 rounded-full border border-slate-900 mb-1">
+              Praktik Kerja Lapangan (PKL)
+            </div>
+<h4 class="font-black text-slate-900 text-base leading-tight">
+              PT. Sukses Diamond Property
+            </h4>
+<p class="text-xs font-bold text-retro-orange mt-0.5">
+              Graphic Designer &amp; Visual Content Intern
+            </p>
+</div>
+</div>
+<!-- Experience Highlights -->
+<div class="mt-4 pt-3 border-t-2 border-dashed border-slate-300">
+<p class="text-xs font-semibold text-slate-700 leading-relaxed mb-2.5">
+            Bertanggung jawab merancang kebutuhan grafis dan identitas visual promosi perusahaan:
+          </p>
+<ul class="space-y-1.5 text-xs text-slate-800 font-medium">
+
+<li class="flex items-start gap-2">
+<span class="text-retro-green font-bold">✔</span>
+<span class="">Branding media sosial &amp; feeds Instagram promosi unit properti.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="text-retro-green font-bold">✔</span>
+<span class="">Brosur informatif dan visual kampanye pemasaran berkala.</span>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- END: ExperienceSection -->
+<!-- BEGIN: SkillsAndSoftwareSection -->
+<section class="p-5 bg-cream relative border-b-4 border-slate-900" data-purpose="skills-software" id="skills-software">
+<div class="text-center mb-5">
+<div class="inline-block bg-retro-blue text-white border-2 border-slate-900 rounded-full px-4 py-1 shadow-comic-sm rotate-1 mb-1">
+<h3 class="font-shrikhand text-2xl tracking-wide">Skills &amp; Software</h3>
+</div>
+<p class="text-xs font-bold text-slate-600">Alat tempur &amp; keahlian visual yang saya kuasai</p>
+</div>
+<!-- Specific Requested Software Badges: Adobe Illustrator (Ai), Canva, CapCut -->
+<div class="space-y-3">
+<!-- 1. Adobe Illustrator (Ai) -->
+<div onclick="openSliderModal(['desain kaos.png', 'desain kaos 1.jpeg', 'desain kaos 2.jpeg', 'logo digital.jpeg', 'karakter ai.jpeg'], ['Tugas Desain Kaos', 'Tugas Desain Kaos 1', 'Tugas Desain Kaos 2', 'Tugas Logo Digital', 'Tugas Karakter AI'], 'Adobe Illustrator • DKV 3')" class="bg-white border-2 border-slate-900 rounded-2xl p-3 shadow-comic flex items-center gap-3 transition transform hover:-translate-y-0.5 cursor-pointer hover:border-retro-hotpink group" title="Klik untuk lihat Tugas Desain">
+<!-- Adobe Ai Icon Stamp -->
+<div class="w-13 h-13 min-w-[52px] min-h-[52px] bg-[#330000] border-2 border-slate-900 rounded-xl flex flex-col items-center justify-center shadow-comic-sm">
+<span class="font-black text-[#ff9a00] text-xl leading-none">Ai</span>
+<span class="text-[7px] text-[#ff9a00] font-bold tracking-tighter uppercase">Illustrator</span>
+</div>
+<div class="flex-1">
+<div class="flex items-center justify-between">
+<h4 class="font-black text-slate-900 text-sm group-hover:text-retro-hotpink transition">Adobe Illustrator</h4>
+<span class="text-[10px] font-black bg-amber-100 text-amber-900 px-2 py-0.5 rounded-full border border-amber-300">Slide Foto 👁️</span>
+</div>
+<p class="text-[11px] text-slate-600 font-semibold mt-0.5">Tugas Desain</p>
+</div>
+</div>
+<!-- 2. Canva -->
+<div onclick="openSliderModal(['feed perumahan.jpeg', 'feed properti.jpeg'], ['Tugas Desain Feed', 'Tugas Desain Feed Properti'], 'Canva Pro • Social Media Design')" class="bg-white border-2 border-slate-900 rounded-2xl p-3 shadow-comic flex items-center gap-3 transition transform hover:-translate-y-0.5 cursor-pointer hover:border-retro-hotpink group" title="Klik untuk lihat Tugas Desain">
+<!-- Canva Icon Stamp -->
+<div class="w-13 h-13 min-w-[52px] min-h-[52px] bg-gradient-to-br from-[#00c4cc] to-[#7d2ae8] border-2 border-slate-900 rounded-xl flex items-center justify-center text-white font-black text-xl shadow-comic-sm">
+<span class="font-display italic">C</span>
+</div>
+<div class="flex-1">
+<div class="flex items-center justify-between">
+<h4 class="font-black text-slate-900 text-sm group-hover:text-retro-hotpink transition">Canva Pro</h4>
+<span class="text-[10px] font-black bg-cyan-100 text-cyan-900 px-2 py-0.5 rounded-full border border-cyan-300">Slide Foto 👁️</span>
+</div>
+<p class="text-[11px] text-slate-600 font-semibold mt-0.5">Tugas Desain</p>
+</div>
+</div>
+<!-- 3. CapCut -->
+<div onclick="openVideoModal('reels instagram.mp4', 'Tugas Video', 'CapCut • Reels Instagram')" class="bg-white border-2 border-slate-900 rounded-2xl p-3 shadow-comic flex items-center gap-3 transition transform hover:-translate-y-0.5 cursor-pointer hover:border-retro-hotpink group" title="Klik untuk putar Tugas Video">
+<!-- CapCut Icon Stamp -->
+<div class="w-13 h-13 min-w-[52px] min-h-[52px] bg-black border-2 border-slate-900 rounded-xl flex items-center justify-center shadow-comic-sm">
+<svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24">
+<path d="M19 4h-4l-3 4-3-4H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm-7 8l4 4h-8l4-4z"></path>
+</svg>
+</div>
+<div class="flex-1">
+<div class="flex items-center justify-between">
+<h4 class="font-black text-slate-900 text-sm group-hover:text-retro-hotpink transition">Tugas Video</h4>
+<span class="text-[10px] font-black bg-rose-100 text-rose-900 px-2 py-0.5 rounded-full border border-rose-300">Putar Video ▶</span>
+</div>
+<p class="text-[11px] text-slate-600 font-semibold mt-0.5">
+              Editing video pendek dinamis &amp; reels Instagram menggunakan CapCut.
+            </p>
+</div>
+</div>
+</div>
+<!-- Core Design Competencies Pills -->
+<div class="mt-4 pt-4 border-t-2 border-dashed border-slate-300">
+<span class="text-[11px] font-black text-slate-800 uppercase tracking-wider block mb-2 text-center">
+          ✨ Bidang Keahlian Desain DKV ✨
+        </span>
+<div class="flex flex-wrap justify-center gap-2">
+<span class="bg-retro-yellow text-slate-900 text-xs font-bold px-3 py-1 rounded-full border-2 border-slate-900 shadow-comic-sm">
+            🏷️ Branding &amp; Identity
+          </span>
+<span class="bg-retro-hotpink text-white text-xs font-bold px-3 py-1 rounded-full border-2 border-slate-900 shadow-comic-sm">
+            📱 Social Media Content
+          </span>
+<span class="bg-retro-green text-white text-xs font-bold px-3 py-1 rounded-full border-2 border-slate-900 shadow-comic-sm">
+            📰 Editorial &amp; Layout
+          </span>
+<span class="bg-retro-blue text-white text-xs font-bold px-3 py-1 rounded-full border-2 border-slate-900 shadow-comic-sm">
+            💡 Visual Storytelling
+          </span>
+</div>
+</div>
+</section>
+<!-- END: SkillsAndSoftwareSection -->
+<!-- BEGIN: ProjectsShowcaseSection -->
+
+<!-- END: ProjectsShowcaseSection -->
+<!-- BEGIN: ContactSection -->
+<section class="p-5 bg-cream relative" data-purpose="contact-options" id="contact">
+<div class="text-center mb-5">
+<div class="inline-block bg-retro-hotpink text-white border-2 border-slate-900 rounded-full px-4 py-1 shadow-comic-sm -rotate-2">
+<h3 class="font-shrikhand text-2xl tracking-wide">Let's Connect!</h3>
+</div>
+<p class="text-xs font-bold text-slate-600 mt-2">
+          Tertarik bekerjasama atau ingin diskusi desain? Kontak saya di bawah ini:
+        </p>
+</div>
+<!-- Action Buttons (Strictly NO X/Twitter as specified) -->
+<div class="space-y-3">
+<!-- 1. Email Button -->
+<a class="badge-pop bg-white border-2 border-slate-900 rounded-2xl p-3.5 shadow-comic flex items-center justify-between group" href="mailto:ndaa.pl08@gmail.com">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 bg-retro-yellow border-2 border-slate-900 rounded-xl flex items-center justify-center text-slate-900 text-lg shadow-comic-sm">
+              ✉️
+            </div>
+<div>
+<div class="text-[10px] font-black uppercase text-slate-500">Email Resmi</div>
+<div class="font-black text-xs text-slate-900 group-hover:text-retro-blue transition">ndaa.pl08@gmail.com</div>
+</div>
+</div>
+<span class="bg-retro-blue text-white font-extrabold text-[10px] px-3 py-1.5 rounded-full border border-slate-900 shadow-comic-sm">
+            Kirim Email →
+          </span>
+</a>
+<!-- 2. WhatsApp Button -->
+<a class="badge-pop bg-[#25d366]/10 border-2 border-slate-900 rounded-2xl p-3.5 shadow-comic flex items-center justify-between group" href="https://wa.me/628816232198" rel="noopener noreferrer" target="_blank">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 bg-[#25d366] border-2 border-slate-900 rounded-xl flex items-center justify-center text-white text-lg shadow-comic-sm">
+              💬
+            </div>
+<div>
+<div class="text-[10px] font-black uppercase text-slate-500">WhatsApp Chat</div>
+<div class="font-black text-xs text-slate-900">08816232198</div>
+</div>
+</div>
+<span class="bg-[#25d366] text-slate-900 font-extrabold text-[10px] px-3 py-1.5 rounded-full border border-slate-900 shadow-comic-sm">
+            Chat WA →
+          </span>
+</a>
+<!-- 3. Instagram Button -->
+<a class="badge-pop bg-white border-2 border-slate-900 rounded-2xl p-3.5 shadow-comic flex items-center justify-between group" href="https://www.instagram.com/ndaa.jlstr?stkn=MWEzajR2dnZhNXBtMA==f" rel="noopener noreferrer" target="_blank">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 bg-gradient-to-tr from-[#f9ce34] via-[#ee2a7b] to-[#6228d7] border-2 border-slate-900 rounded-xl flex items-center justify-center text-white text-lg shadow-comic-sm">
+              📷
+            </div>
+<div>
+<div class="text-[10px] font-black uppercase text-slate-500">Instagram Profile</div>
+<div class="font-black text-xs text-slate-900 group-hover:text-retro-hotpink transition">@ndaa.jlstr</div>
+</div>
+</div>
+<span class="bg-retro-hotpink text-white font-extrabold text-[10px] px-3 py-1.5 rounded-full border border-slate-900 shadow-comic-sm">
+            Follow →
+          </span>
+</a>
+</div>
+<!-- Playful Footer Note -->
+<div class="mt-8 text-center">
+<div class="inline-block bg-cream border-2 border-dashed border-slate-400 rounded-xl p-3 text-[11px] font-bold text-slate-600">
+          ✨ "Terima kasih sudah berkunjung ke portofolio saya!" ✨
+          <div class="text-[10px] text-slate-500 mt-1">© 2025 Endah Puji Lestari • Kelas XII DKV 3</div>
+</div>
+</div>
+</section>
+<!-- END: ContactSection -->
+<!-- BEGIN: QuickStickyFloatingBar -->
+<!-- Handy bottom navigation pill bar for iOS mobile view -->
+<div class="fixed bottom-3 inset-x-0 max-w-[400px] mx-auto px-4 z-40">
+<nav class="bg-slate-900/95 backdrop-blur border-2 border-white rounded-full py-2 px-4 shadow-2xl flex items-center justify-around text-white text-[11px] font-extrabold">
+<a class="hover:text-retro-yellow transition" href="#about-me">About</a>
+<span class="text-slate-600">•</span>
+<a class="hover:text-retro-orange transition" href="#experience">PKL</a>
+<span class="text-slate-600">•</span>
+<a class="hover:text-retro-green transition" href="#skills-software">Skills</a>
+<span class="text-slate-600">•</span>
+
+
+<a class="bg-retro-yellow text-slate-900 px-2.5 py-0.5 rounded-full font-black hover:scale-105 transition" href="#contact">Kontak</a>
+</nav>
+</div>
+<!-- END: QuickStickyFloatingBar -->
+</div>
+<!-- Smooth Anchor Scroll Handler -->
+<script data-purpose="smooth-navigation">
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+  </script>
+
+<!-- PHOTO MODAL LIGHTBOX -->
+<div id="photoModal" class="fixed inset-0 bg-slate-900/80 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden opacity-0 transition-opacity duration-300">
+  <div class="bg-cream border-4 border-slate-900 rounded-3xl shadow-comic-xl max-w-[360px] w-full p-5 relative transform scale-90 transition-transform duration-300" id="photoModalContent">
+    <!-- Close Button -->
+    <button onclick="closePhotoModal()" class="absolute -top-3 -right-3 bg-retro-hotpink text-white border-3 border-slate-900 rounded-full w-9 h-9 font-black flex items-center justify-center shadow-comic hover:scale-110 transition cursor-pointer z-20 text-base">✕</button>
+    
+    <!-- Header Badge -->
+    <div class="text-center mb-3">
+      <span id="modalHeaderBadge" class="bg-retro-yellow border-2 border-slate-900 px-3 py-0.5 rounded-full text-xs font-black uppercase tracking-wider shadow-comic-sm">
+        ✨ Foto Lestari ✨
+      </span>
+    </div>
+
+    <!-- Media Container -->
+    <div class="bg-white border-3 border-slate-900 rounded-2xl p-2 shadow-comic overflow-hidden relative flex items-center justify-center">
+      <img id="modalImage" src="foto lestari.jpeg" alt="Preview" class="w-full h-auto max-h-[380px] object-cover rounded-xl border-2 border-slate-900">
+      <video id="modalVideo" src="" controls class="w-full h-auto max-h-[380px] rounded-xl border-2 border-slate-900 hidden"></video>
+
+      <!-- Slider Navigation Buttons -->
+      <button id="prevSlideBtn" onclick="changeSlide(-1)" class="absolute left-3 bg-white/95 border-2 border-slate-900 rounded-full w-8 h-8 font-black text-slate-900 flex items-center justify-center shadow-comic-sm hover:scale-110 transition cursor-pointer hidden z-20">❮</button>
+      <button id="nextSlideBtn" onclick="changeSlide(1)" class="absolute right-3 bg-white/95 border-2 border-slate-900 rounded-full w-8 h-8 font-black text-slate-900 flex items-center justify-center shadow-comic-sm hover:scale-110 transition cursor-pointer hidden z-20">❯</button>
+      
+      <!-- Slide Indicator Badge -->
+      <div id="slideIndicator" class="absolute bottom-3 bg-slate-900/80 text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full hidden z-20">1 / 2</div>
+    </div>
+
+    <!-- Footer Caption -->
+    <div class="mt-3 text-center">
+      <p id="modalTitle" class="font-shrikhand text-lg text-slate-900 tracking-wide">Endah Puji Lestari</p>
+      <p id="modalSubtitle" class="text-[11px] font-bold text-retro-hotpink uppercase mt-0.5">DKV 3 • Creative Designer</p>
+    </div>
+  </div>
+</div>
+
+<script>
+  let currentSlides = [];
+  let currentTitles = [];
+  let currentSubtitle = '';
+  let currentSlideIndex = 0;
+
+  function openSliderModal(slides, titles, subtitle) {
+    currentSlides = slides;
+    currentTitles = titles;
+    currentSubtitle = subtitle;
+    currentSlideIndex = 0;
+    
+    updateSlideView();
+
+    const modal = document.getElementById('photoModal');
+    const content = document.getElementById('photoModalContent');
+    modal.classList.remove('hidden');
+    setTimeout(() => {
+      modal.classList.remove('opacity-0');
+      content.classList.remove('scale-90');
+      content.classList.add('scale-100');
+    }, 10);
+  }
+
+  function changeSlide(direction) {
+    currentSlideIndex += direction;
+    if (currentSlideIndex < 0) currentSlideIndex = currentSlides.length - 1;
+    if (currentSlideIndex >= currentSlides.length) currentSlideIndex = 0;
+    updateSlideView();
+  }
+
+  function updateSlideView() {
+    const imgEl = document.getElementById('modalImage');
+    const vidEl = document.getElementById('modalVideo');
+    const prevBtn = document.getElementById('prevSlideBtn');
+    const nextBtn = document.getElementById('nextSlideBtn');
+    const indicator = document.getElementById('slideIndicator');
+
+    vidEl.pause();
+    vidEl.classList.add('hidden');
+    imgEl.classList.remove('hidden');
+
+    imgEl.src = currentSlides[currentSlideIndex];
+    document.getElementById('modalTitle').textContent = currentTitles[currentSlideIndex];
+    document.getElementById('modalSubtitle').textContent = currentSubtitle;
+    document.getElementById('modalHeaderBadge').textContent = `✨ ${currentTitles[currentSlideIndex]} ✨`;
+
+    if (currentSlides.length > 1) {
+      prevBtn.classList.remove('hidden');
+      nextBtn.classList.remove('hidden');
+      indicator.classList.remove('hidden');
+      indicator.textContent = `${currentSlideIndex + 1} / ${currentSlides.length}`;
+    } else {
+      prevBtn.classList.add('hidden');
+      nextBtn.classList.add('hidden');
+      indicator.classList.add('hidden');
+    }
+  }
+
+  function openMediaModal(src, title, subtitle, isVideo) {
+    const modal = document.getElementById('photoModal');
+    const content = document.getElementById('photoModalContent');
+    const imgEl = document.getElementById('modalImage');
+    const vidEl = document.getElementById('modalVideo');
+    
+    document.getElementById('modalTitle').textContent = title;
+    document.getElementById('modalSubtitle').textContent = subtitle;
+    document.getElementById('modalHeaderBadge').textContent = "✨ " + title + " ✨";
+
+    document.getElementById('prevSlideBtn').classList.add('hidden');
+    document.getElementById('nextSlideBtn').classList.add('hidden');
+    document.getElementById('slideIndicator').classList.add('hidden');
+
+    if (isVideo) {
+      imgEl.classList.add('hidden');
+      vidEl.classList.remove('hidden');
+      vidEl.src = src;
+      vidEl.load();
+    } else {
+      vidEl.pause();
+      vidEl.classList.add('hidden');
+      imgEl.classList.remove('hidden');
+      imgEl.src = src;
+    }
+
+    modal.classList.remove('hidden');
+    setTimeout(() => {
+      modal.classList.remove('opacity-0');
+      content.classList.remove('scale-90');
+      content.classList.add('scale-100');
+    }, 10);
+  }
+
+  function openImageModal(imgSrc, title, subtitle) {
+    openSliderModal([imgSrc], [title], subtitle);
+  }
+
+  function openVideoModal(vidSrc, title, subtitle) {
+    openMediaModal(vidSrc, title, subtitle, true);
+  }
+
+  function openPhotoModal() {
+    openImageModal('foto lestari.jpeg', 'Endah Puji Lestari', 'DKV 3 • Creative Designer');
+  }
+
+  function closePhotoModal() {
+    const modal = document.getElementById('photoModal');
+    const content = document.getElementById('photoModalContent');
+    const vidEl = document.getElementById('modalVideo');
+    vidEl.pause();
+    modal.classList.add('opacity-0');
+    content.classList.remove('scale-100');
+    content.classList.add('scale-90');
+    setTimeout(() => {
+      modal.classList.add('hidden');
+    }, 300);
+  }
+
+  document.getElementById('photoModal').addEventListener('click', function(e) {
+    if (e.target === this) {
+      closePhotoModal();
+    }
+  });
+</script>
+
+</body></html>
